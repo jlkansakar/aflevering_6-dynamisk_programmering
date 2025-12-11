@@ -6,7 +6,6 @@ body {
   padding: 24px;
 }
 
-
 .container {
   width: max-content;
   text-align: center;
@@ -22,7 +21,7 @@ h2 {
 }
 
 .board {
-  display:grid;
+  display: grid;
   grid-template-columns: repeat(12, 48px);
   grid-template-rows: repeat(5, 48px);
   padding: 12px;
@@ -30,4 +29,28 @@ h2 {
   background: #fff;
   box-shadow: 0 6px 20px;
   border-radius: 8px;
+}
+
+.cell {
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  font-weight: bold;
+  position: relative;
+  cursor: pointer;
+}
+
+.wall {
+  background: #111;
+  color: #fff;
+}
+
+.start {
+  background: #fff7e6;
+}
+
+.end {
+  background: #e6ffe6;
 }
